@@ -193,7 +193,7 @@ export async function refreshAccount() {
 		});
 }
 
-export async function login(token: Account['token'], redirect?: string) {
+export async function login(token: Account['token'], redirect?: string, reload = true) {
 	const showing = ref(true);
 	const { dispose } = popup(defineAsyncComponent(() => import('@/components/MkWaitingDialog.vue')), {
 		success: false,
@@ -224,7 +224,11 @@ export async function login(token: Account['token'], redirect?: string) {
 		return;
 	}
 
-	unisonReload();
+	if (reload) {
+		unisonReload();
+	} else {
+		showing.value = false;
+	}
 }
 
 export async function openAccountMenu(opts: {
