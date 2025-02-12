@@ -19,6 +19,7 @@ export * as 'admin/abuse-user-reports' from './endpoints/admin/abuse-user-report
 export * as 'admin/accounts/create' from './endpoints/admin/accounts/create.js';
 export * as 'admin/accounts/delete' from './endpoints/admin/accounts/delete.js';
 export * as 'admin/accounts/find-by-email' from './endpoints/admin/accounts/find-by-email.js';
+export * as 'admin/accounts/get-login-token' from './endpoints/admin/accounts/get-login-token.js';
 export * as 'admin/ad/create' from './endpoints/admin/ad/create.js';
 export * as 'admin/ad/delete' from './endpoints/admin/ad/delete.js';
 export * as 'admin/ad/list' from './endpoints/admin/ad/list.js';
