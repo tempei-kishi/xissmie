@@ -113,9 +113,6 @@ importers:
       '@fastify/express':
         specifier: 4.0.1
         version: 4.0.1
-      '@fastify/formbody':
-        specifier: ^8.0.2
-        version: 8.0.2
       '@fastify/http-proxy':
         specifier: 10.0.1
         version: 10.0.1(bufferutil@4.0.7)(utf-8-validate@6.0.3)
@@ -2461,9 +2458,6 @@ packages:
 
   '@fastify/fast-json-stringify-compiler@5.0.0':
     resolution: {integrity: sha512-tywfuZfXsyxLC5kEqrMubbFa9vpAxNtuPE7j9w5si1r+6p5b981pDfZ5Y8HBqmjDQl+PABT7cV5jZgXI2j+I5g==}
-
-  '@fastify/formbody@8.0.2':
-    resolution: {integrity: sha512-84v5J2KrkXzjgBpYnaNRPqwgMsmY7ZDjuj0YVuMR3NXCJRCgKEZy/taSP1wUYGn0onfxJpLyRGDLa+NMaDJtnA==}
 
   '@fastify/http-proxy@10.0.1':
     resolution: {integrity: sha512-wCMwI9RXK5ISe9G1FGPDCCD2KlSAuLtDDU8XBEfiBxYV0nt+aYm4vPhU/0+IhUM6t+r7UWiV+9OYaJxcTem9+g==}
@@ -10839,8 +10833,8 @@ packages:
   vue-component-type-helpers@2.1.10:
     resolution: {integrity: sha512-lfgdSLQKrUmADiSV6PbBvYgQ33KF3Ztv6gP85MfGaGaSGMTXORVaHT1EHfsqCgzRNBstPKYDmvAV9Do5CmJ07A==}
 
-  vue-component-type-helpers@2.2.4:
-    resolution: {integrity: sha512-F66p0XLbAu92BRz6kakHyAcaUSF7HWpWX/THCqL0TxySSj7z/nok5UUMohfNkkCm1pZtawsdzoJ4p1cjNqCx0Q==}
+  vue-component-type-helpers@2.2.8:
+    resolution: {integrity: sha512-4bjIsC284coDO9om4HPA62M7wfsTvcmZyzdfR0aUlFXqq4tXxM1APyXpNVxPC8QazKw9OhmZNHBVDA6ODaZsrA==}
 
   vue-demi@0.14.7:
     resolution: {integrity: sha512-EOG8KXDQNwkJILkx/gPcoL/7vH+hORoBaKgGe+6W7VFMvCYJfmF2dGbvgDroVnI8LU7/kTu8mbjRZGBU1z9NTA==}
@@ -12435,11 +12429,6 @@ snapshots:
   '@fastify/fast-json-stringify-compiler@5.0.0':
     dependencies:
       fast-json-stringify: 6.0.0
-
-  '@fastify/formbody@8.0.2':
-    dependencies:
-      fast-querystring: 1.1.2
-      fastify-plugin: 5.0.0
 
   '@fastify/http-proxy@10.0.1(bufferutil@4.0.7)(utf-8-validate@6.0.3)':
     dependencies:
@@ -14445,7 +14434,7 @@ snapshots:
       ts-dedent: 2.2.0
       type-fest: 2.19.0
       vue: 3.5.12(typescript@5.6.3)
-      vue-component-type-helpers: 2.2.4
+      vue-component-type-helpers: 2.2.8
 
   '@swc/cli@0.3.12(@swc/core@1.9.2)(chokidar@3.5.3)':
     dependencies:
@@ -22619,7 +22608,7 @@ snapshots:
 
   vue-component-type-helpers@2.1.10: {}
 
-  vue-component-type-helpers@2.2.4: {}
+  vue-component-type-helpers@2.2.8: {}
 
   vue-demi@0.14.7(vue@3.5.12(typescript@5.6.3)):
     dependencies:

@@ -77,7 +77,6 @@
 		"@fastify/cookie": "11.0.1",
 		"@fastify/cors": "10.0.1",
 		"@fastify/express": "4.0.1",
-		"@fastify/formbody": "^8.0.2",
 		"@fastify/http-proxy": "10.0.1",
 		"@fastify/multipart": "9.0.1",
 		"@fastify/static": "8.0.2",

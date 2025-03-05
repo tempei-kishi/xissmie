@@ -20,9 +20,8 @@ import MkAnimBg from '@/components/MkAnimBg.vue';
 import { definePageMetadata } from '@/scripts/page-metadata.js';
 import { $i, login } from '@/account.js';
 import { misskeyApi } from '@/scripts/misskey-api.js';
-import { serverContext, assertServerContext } from '@/server-context.js';
 
-const token = assertServerContext(serverContext, 'token') ? serverContext.token : null;
+const token = new URLSearchParams(location.search).get('token');
 
 const message = ref('ログイン中...');
 
