@@ -78,6 +78,12 @@ export class MiEmoji {
 	})
 	public isSensitive: boolean;
 
+	// ストアの商品かどうか
+	@Column('boolean', {
+		default: false,
+	})
+	public isInStore: boolean;
+
 	// TODO: 定期ジョブで存在しなくなったロールIDを除去するようにする
 	@Column('varchar', {
 		array: true, length: 128, default: '{}',
