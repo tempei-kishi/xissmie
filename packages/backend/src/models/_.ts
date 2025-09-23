@@ -91,6 +91,8 @@ import { MiUserPending } from '@/models/UserPending.js';
 import { MiUserProfile } from '@/models/UserProfile.js';
 import { MiUserPublickey } from '@/models/UserPublickey.js';
 import { MiUserSecurityKey } from '@/models/UserSecurityKey.js';
+import { MiUserOwnedAvatarDecoration } from '@/models/UserOwnedAvatarDecoration.js';
+import { MiUserOwnedEmoji } from '@/models/UserOwnedEmoji.js';
 import { MiWebhook } from '@/models/Webhook.js';
 import type { QueryDeepPartialEntity } from 'typeorm/query-builder/QueryPartialEntity.js';
 
@@ -234,6 +236,8 @@ export {
 	MiChatApproval,
 	MiBubbleGameRecord,
 	MiReversiGame,
+	MiUserOwnedAvatarDecoration,
+	MiUserOwnedEmoji,
 };
 
 export type AbuseUserReportsRepository = Repository<MiAbuseUserReport> & MiRepository<MiAbuseUserReport>;
@@ -313,3 +317,5 @@ export type ChatRoomInvitationsRepository = Repository<MiChatRoomInvitation> & M
 export type ChatApprovalsRepository = Repository<MiChatApproval> & MiRepository<MiChatApproval>;
 export type BubbleGameRecordsRepository = Repository<MiBubbleGameRecord> & MiRepository<MiBubbleGameRecord>;
 export type ReversiGamesRepository = Repository<MiReversiGame> & MiRepository<MiReversiGame>;
+export type UserOwnedAvatarDecorationsRepository = Repository<MiUserOwnedAvatarDecoration> & MiRepository<MiUserOwnedAvatarDecoration>;
+export type UserOwnedEmojisRepository = Repository<MiUserOwnedEmoji> & MiRepository<MiUserOwnedEmoji>;

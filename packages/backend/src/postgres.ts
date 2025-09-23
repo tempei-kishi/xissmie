@@ -70,6 +70,8 @@ import { MiUserPending } from '@/models/UserPending.js';
 import { MiUserProfile } from '@/models/UserProfile.js';
 import { MiUserPublickey } from '@/models/UserPublickey.js';
 import { MiUserSecurityKey } from '@/models/UserSecurityKey.js';
+import { MiUserOwnedAvatarDecoration } from '@/models/UserOwnedAvatarDecoration.js';
+import { MiUserOwnedEmoji } from '@/models/UserOwnedEmoji.js';
 import { MiWebhook } from '@/models/Webhook.js';
 import { MiSystemWebhook } from '@/models/SystemWebhook.js';
 import { MiChannel } from '@/models/Channel.js';
@@ -259,6 +261,8 @@ export const entities = [
 	MiChatApproval,
 	MiBubbleGameRecord,
 	MiReversiGame,
+	MiUserOwnedEmoji,
+	MiUserOwnedAvatarDecoration,
 	...charts,
 ];
 
